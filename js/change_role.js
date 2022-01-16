@@ -6,10 +6,10 @@ function changeRole() {
     const roles = document.querySelector('.roles')
 
     if (roles.style.display === "none") {
-        roles.style.display = ""
+        roles.style.display = "flex"
     }
     if(role1.style.display === "none"){
-        roles.style.display = ""
+        role1.style.display = "flex"
     }
 
     if (frame.value === "Admin") {

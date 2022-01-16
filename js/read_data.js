@@ -45,11 +45,12 @@ function alert_data(json) {
 
     profile_pic.src = json.pfp;
     if(json.banner != null){
+        banner.style.display = ""
         banner.src = json.banner;
         content_des.style.backgroundColor = ""
     }else{
         content_des.style.backgroundColor = "transparent"
-        banner.src = ""
+        banner.style.display = "none"
     }
 
     if (json.badges != null){
@@ -59,7 +60,7 @@ function alert_data(json) {
         rolesContainer.style.display = "none"
     }
 
-    description.value = json.description;
+    description.innerHTML = json.description;
 
     stats[0].value = json.stats.messages;
     stats[1].value = json.stats.featured_content;
