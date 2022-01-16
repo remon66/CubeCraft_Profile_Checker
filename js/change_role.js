@@ -62,7 +62,7 @@ function changeRole() {
         role1.style.display = "none"
     }
     if (frame.value === "Member") {
-        role2s.style.display = "none";
+        roles.style.display = "none";
         console.log("sdphgueaiohoviaerhveahrypuvi")
     }
 }

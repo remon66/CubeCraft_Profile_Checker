@@ -11,119 +11,135 @@
           type="image/x-icon">
     <script src="js/banner.js"></script>
     <script src="js/change_role.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 </head>
 <body onload="checkBanner()">
-<div class="upload">
-    <div class="text">
-        <span>Profile picture</span>
-        <span>Banner</span>
-        <span>Role</span>
-    </div>
-    <div class="input">
-        <input class="pfp" type="file" accept="image/png, image/jpeg" onchange="readPfp(this)">
-        <input class="banner-input" accept="image/png, image/jpeg" type="file"
-               onchange="changeBanner(); readBanner(this);">
-        <select class="roleSelect" onchange="changeRole()">
-            <option>Admin</option>
-            <option>Customer Support</option>
-            <option>Senior Moderator</option>
-            <option>Moderator</option>
-            <option>Helper</option>
-            <option>Quality Assurance</option>
-            <option>Developer</option>
-            <option>Senior Designer</option>
-            <option>Designer</option>
-            <option>Senior Translator</option>
-            <option>Translator</option>
-            <option>Content Creator</option>
-            <option selected>Member</option>
-        </select>
-    </div>
-</div>
-<div class="profile">
-    <div class="container-fluid g-0">
-        <div class="row g-0">
-            <div class="top">
-                <div class="col-12">
-                    <div class="profile-pic">
-                        <img class="profile-picture"
-                             src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png">
-                    </div>
-                    <div class="content">
-                        <div class="name">
-                            <input type="text" class="name-input">
-                        </div>
-                        <div class="roles">
-                            <div class="role-1">
-                                Team CubeCraft
-                            </div>
-                            <div class="role-2">
-                                🧪 Quality Assurance
+<div class="container-fluid" style="width: 100vw">
+    <div class="row">
+        <div class="col-7">
+            <div class="d-flex justify-content-center align-items-center" style="height: 100%">
+                <div class="upload" style="width: 50%">
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="text">
+                                <span>Profile picture</span>
+                                <span>Banner</span>
+                                <span>JSON</span>
+                                <span>Role</span>
                             </div>
                         </div>
-                        <div class="description">
-                            <div class="content-des">
-                                <ul>
-                                    <li class="des-title">Quality Assurance</li>
-                                    <li class="age">19</li>
-                                </ul>
+                        <div class="col-7">
+                            <div class="input">
+                                <input class="pfp" type="file" accept="image/png, image/jpeg" onchange="readPfp(this)">
+                                <input class="banner-input" accept="image/png, image/jpeg" type="file"
+                                       onchange="changeBanner(); readBanner(this);">
+                                <input class="json-input" accept="application/json" type="file">
+                                <select class="roleSelect" onchange="changeRole()">
+                                    <option>Admin</option>
+                                    <option>Customer Support</option>
+                                    <option>Senior Moderator</option>
+                                    <option>Moderator</option>
+                                    <option>Helper</option>
+                                    <option>Quality Assurance</option>
+                                    <option>Developer</option>
+                                    <option>Senior Designer</option>
+                                    <option>Designer</option>
+                                    <option>Senior Translator</option>
+                                    <option>Translator</option>
+                                    <option>Content Creator</option>
+                                    <option selected>Member</option>
+                                </select>
                             </div>
-                        </div>
-                        <div class="banner">
-                            <img class="banner-image" src="sweet-tooth-gus-sad.jpg">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row g-0">
-            <div class="bottom">
-                <div class="col-12">
+        <div class="col-5">
+            <div class="profile">
+                <div class="container-fluid g-0">
                     <div class="row g-0">
-                        <div class="col-12">
-                            <div class="content-mid">
-                                <div class="row">
-                                    <div class="col-6 g-0">
-                                        <div class="title-stat">
-                                            <span>Messages</span>
-                                            <span>Featured content</span>
-                                            <span>Reaction score</span>
-                                            <span>Points</span>
+                        <div class="top">
+                            <div class="col-12">
+                                <div class="profile-pic">
+                                    <img class="profile-picture"
+                                         src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png">
+                                </div>
+                                <div class="content">
+                                    <div class="name">
+                                        <input type="text" class="name-input">
+                                    </div>
+                                    <div class="roles">
+                                        <div class="role-1">
+                                            Team CubeCraft
+                                        </div>
+                                        <div class="role-2">
+                                            🧪 Quality Assurance
                                         </div>
                                     </div>
-                                    <div class="col-6 g-0">
-                                        <div class="stat-value">
-                                            <h6>735</h6>
-                                            <h6>1</h6>
-                                            <h6>2.435</h6>
-                                            <h6>546</h6>
+                                    <div class="description">
+                                        <div class="content-des">
+                                            <span class="des-content"></span>
                                         </div>
+                                    </div>
+                                    <div class="banner">
+                                        <img class="banner-image" src="">
                                     </div>
                                 </div>
                             </div>
-                            <div style="width: 100%" class="d-flex justify-content-center">
-                                <div style="width: 90%">
-                                    <div class="line"></div>
-                                </div>
-                            </div>
-                            <div class="content-bottom">
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="bottom">
+                            <div class="col-12">
                                 <div class="row g-0">
-                                    <div class="col-12 g-0">
-                                        <span class="title">Joined:</span>
-                                        <span class="value">Jul 14, 2015</span>
+                                    <div class="col-12">
+                                        <div class="content-mid">
+                                            <div class="row">
+                                                <div class="col-6 g-0">
+                                                    <div class="title-stat">
+                                                        <span>Messages</span>
+                                                        <span>Featured content</span>
+                                                        <span>Reaction score</span>
+                                                        <span>Points</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 g-0">
+                                                    <div class="stat-value">
+                                                        <input class="messages"/>
+                                                        <input class="featured-content"/>
+                                                        <input class="reaction-score"/>
+                                                        <input class="points"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="width: 100%" class="d-flex justify-content-center">
+                                            <div style="width: 90%">
+                                                <div class="line"></div>
+                                            </div>
+                                        </div>
+                                        <div class="content-bottom">
+                                            <div class="row g-0">
+                                                <div class="col-12 g-0">
+                                                    <span class="title">Joined:</span>
+                                                    <input class="value joined-at"/>
+                                                </div>
+                                            </div>
+                                            <div class="row g-0">
+                                                <div class="col-12 g-0">
+                                                    <span class="title">Last seen:</span>
+                                                    <input class="value last-seen"/>
+                                                </div>
+                                            </div>
+                                            <!--                                <span class="title">Joined:</span>-->
+                                            <!--                                <span class="value">Jul 14, 2015</span>-->
+                                            <!--                                <br>-->
+                                            <!--                                <span class="title">Last seen:</span>-->
+                                            <!--                                <span class="value">A moment ago</span>-->
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row g-0">
-                                    <div class="col-12 g-0">
-                                        <span class="title">Last seen:</span>
-                                        <span class="value">A moment ago</span>
-                                    </div>
-                                </div>
-<!--                                <span class="title">Joined:</span>-->
-<!--                                <span class="value">Jul 14, 2015</span>-->
-<!--                                <br>-->
-<!--                                <span class="title">Last seen:</span>-->
-<!--                                <span class="value">A moment ago</span>-->
                             </div>
                         </div>
                     </div>
@@ -132,6 +148,9 @@
         </div>
     </div>
 </div>
+
+
 </body>
 <script src="js/read_input.js"></script>
+<script src="js/read_data.js"></script>
 </html>
