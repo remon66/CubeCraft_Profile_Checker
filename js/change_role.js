@@ -12,11 +12,8 @@ function changeRole() {
         role1.style.display = "flex"
     }
 
-    if (frame.value === "Admin") {
-        role2.style.backgroundColor = "#3AA9FF"
-        role2.innerHTML = "💙 Admin Team"
-        name.style.color = "#3AA9FF"
-    }
+    if (frame.value === "Admin") role2.style.backgroundColor = "#3AA9FF"; role2.innerHTML = "💙 Admin Team" ;name.style.color = "#3AA9FF"
+
     if (frame.value === "Moderator") {
         role2.style.backgroundColor = "#FFAA00"
         role2.innerHTML = "🔨 Moderator"

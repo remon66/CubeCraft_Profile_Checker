@@ -43,29 +43,30 @@ function alert_data(json) {
     inputfield.value = json.name.text;
     inputfield.style.color = json.name.color;
 
-    profile_pic.src = json.pfp;
-    if(json.banner != null){
+    profile_pic.src = json.avatar;
+
+    if (json.banner != null) {
         banner.style.display = ""
         banner.src = json.banner;
         content_des.style.backgroundColor = ""
-    }else{
+    } else {
         content_des.style.backgroundColor = "transparent"
         banner.style.display = "none"
     }
 
-    if (json.badges != null){
+    if (json.badges != null) {
         roles[1].style.backgroundColor = json.name.color;
         roles[1].innerHTML = json.badges[1];
-    }else{
+    } else {
         rolesContainer.style.display = "none"
     }
 
     description.innerHTML = json.description;
 
-    stats[0].value = json.stats.messages;
-    stats[1].value = json.stats.featured_content;
-    stats[2].value = json.stats.reaction_score;
-    stats[3].value = json.stats.points;
-    stats[4].value = json.stats.joined_at;
-    stats[5].value = json.stats.last_seen;
+    stats[0].innerHTML = json.stats.messages;
+    stats[1].innerHTML = json.stats.featured_content;
+    stats[2].innerHTML = json.stats.reaction_score;
+    stats[3].innerHTML = json.stats.points;
+    stats[4].innerHTML = json.stats.joined_at;
+    stats[5].innerHTML = json.stats.last_seen;
 }

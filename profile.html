@@ -18,40 +18,75 @@
     <div class="row">
         <div class="col-7">
             <div class="d-flex justify-content-center align-items-center" style="height: 100%">
-                <div class="upload" style="width: 50%">
-                    <div class="row">
-                        <div class="col-5">
-                            <div class="text">
-                                <span>Profile picture</span>
-                                <span>Banner</span>
-                                <span>JSON</span>
-                                <span>Role</span>
-                            </div>
-                        </div>
-                        <div class="col-7">
-                            <div class="input">
-                                <input class="pfp" type="file" accept="image/png, image/jpeg" onchange="readPfp(this)">
-                                <input class="banner-input" accept="image/png, image/jpeg" type="file"
-                                       onchange="changeBanner(); readBanner(this);">
-                                <input class="json-input" accept="application/json" type="file">
-                                <select class="roleSelect" onchange="changeRole()">
-                                    <option>Admin</option>
-                                    <option>Customer Support</option>
-                                    <option>Senior Moderator</option>
-                                    <option>Moderator</option>
-                                    <option>Helper</option>
-                                    <option>Quality Assurance</option>
-                                    <option>Developer</option>
-                                    <option>Senior Designer</option>
-                                    <option>Designer</option>
-                                    <option>Senior Translator</option>
-                                    <option>Translator</option>
-                                    <option>Content Creator</option>
-                                    <option selected>Member</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
+                <div class="upload">
+                    <!--                    <div class="row">-->
+                    <!--                        <div class="upload-header">-->
+                    <!--                            <h5>The name is an input-field. So you can update it really easily if you'd wish.</h5>-->
+                    <!--                        </div>-->
+                    <!--                        <div class="col-5">-->
+                    <!--                            <div class="text">-->
+                    <!--                                <span>Profile picture</span>-->
+                    <!--                                <span>Banner</span>-->
+                    <!--                                <span>JSON</span>-->
+                    <!--                                <span>Role</span>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                        <div class="col-7">-->
+                    <!--                            <div class="input">-->
+                    <!--                                <input class="pfp" type="file" accept="image/png, image/jpeg" onchange="readPfp(this)">-->
+                    <!--                                <input class="banner-input" accept="image/png, image/jpeg" type="file"-->
+                    <!--                                       onchange="changeBanner(); readBanner(this);">-->
+                    <!--                                <input class="json-input" accept="application/json" type="file">-->
+                    <!--                                <select class="roleSelect" onchange="changeRole()">-->
+                    <!--                                    <option>Admin</option>-->
+                    <!--                                    <option>Customer Support</option>-->
+                    <!--                                    <option>Senior Moderator</option>-->
+                    <!--                                    <option>Moderator</option>-->
+                    <!--                                    <option>Helper</option>-->
+                    <!--                                    <option>Quality Assurance</option>-->
+                    <!--                                    <option>Developer</option>-->
+                    <!--                                    <option>Senior Designer</option>-->
+                    <!--                                    <option>Designer</option>-->
+                    <!--                                    <option>Senior Translator</option>-->
+                    <!--                                    <option>Translator</option>-->
+                    <!--                                    <option>Content Creator</option>-->
+                    <!--                                    <option selected>Member</option>-->
+                    <!--                                </select>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <table class="input-table">
+                        <tbody>
+                        <tr>
+                            <td>Profile picture</td>
+                            <td><input class="pfp" type="file" accept="image/png, image/jpeg" onchange="readPfp(this)">
+                            </td>
+                            <td>Banner</td>
+                            <td><input class="banner-input" accept="image/png, image/jpeg" type="file"
+                                       onchange="changeBanner(); readBanner(this);"></td>
+                        </tr>
+                        <tr>
+                            <td>JSON</td>
+                            <td><input class="json-input" accept="application/json" type="file"></td>
+                            <td>Role</td>
+                            <td><select class="roleSelect" onchange="changeRole()">
+                                <option>Admin</option>
+                                <option>Customer Support</option>
+                                <option>Senior Moderator</option>
+                                <option>Moderator</option>
+                                <option>Helper</option>
+                                <option>Quality Assurance</option>
+                                <option>Developer</option>
+                                <option>Senior Designer</option>
+                                <option>Designer</option>
+                                <option>Senior Translator</option>
+                                <option>Translator</option>
+                                <option>Content Creator</option>
+                                <option selected>Member</option>
+                            </select></td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -106,10 +141,10 @@
                                                 </div>
                                                 <div class="col-6 g-0">
                                                     <div class="stat-value">
-                                                        <input class="messages"/>
-                                                        <input class="featured-content"/>
-                                                        <input class="reaction-score"/>
-                                                        <input class="points"/>
+                                                        <span class="messages"></span>
+                                                        <span class="featured-content"></span>
+                                                        <span class="reaction-score"></span>
+                                                        <span class="points"></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -123,13 +158,13 @@
                                             <div class="row g-0">
                                                 <div class="col-12 g-0">
                                                     <span class="title">Joined:</span>
-                                                    <input class="value joined-at"/>
+                                                    <span class="value joined-at"></span>
                                                 </div>
                                             </div>
                                             <div class="row g-0">
                                                 <div class="col-12 g-0">
                                                     <span class="title">Last seen:</span>
-                                                    <input class="value last-seen"/>
+                                                    <span class="value last-seen"></span>
                                                 </div>
                                             </div>
                                             <!--                                <span class="title">Joined:</span>-->
