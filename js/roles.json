@@ -61,7 +61,7 @@
 
     "Member": {
         "color": "#AA0000",
-        "text": "🌍 Translator",
+        "text": null,
         "staff": false
     }
 }

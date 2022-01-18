@@ -14,6 +14,8 @@ function changeRole() {
     role2.innerHTML = roleData["text"]
     name.style.color = roleData["color"]
 
+    console.log(roleData["staff"])
+    
     if (roleData["staff"] == false) {
         roles.style.display = "none";
     }
