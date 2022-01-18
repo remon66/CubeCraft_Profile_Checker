@@ -1,5 +1,4 @@
 {
-
     "Admin": {
         "color": "#3AA9FF",
         "text": "💙 Admin Team"
@@ -65,5 +64,4 @@
         "text": "🌍 Translator",
         "staff": false
     }
-    
 }
