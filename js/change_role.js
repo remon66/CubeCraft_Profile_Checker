@@ -14,10 +14,12 @@ function changeRole() {
     role2.innerHTML = roleData["text"]
     name.style.color = roleData["color"]
 
-    console.log(roleData["staff"])
-    
-    if (roleData["staff"] == false) {
-        roles.style.display = "none";
+    console.log(roleData)
+
+    if (roleData["staff"] != null) {
+        role1.style.display = "none";
+    } else {
+        role1.style.display = "flex";
     }
 
     if (roles.style.display === "none" || role1.style.display === "none") {
