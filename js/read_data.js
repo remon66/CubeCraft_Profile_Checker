@@ -61,7 +61,7 @@ function alert_data(json) {
         rolesContainer.style.display = "none"
     }
 
-    description.innerHTML = json.description;
+    description.innerHTML = json.description.title + " · " + json.description.text;
 
     stats[0].innerHTML = json.stats.messages;
     stats[1].innerHTML = json.stats.featured_content;
