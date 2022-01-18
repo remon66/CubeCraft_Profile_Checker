@@ -1,0 +1,67 @@
+{
+    "Admin": {
+        "color": "#3AA9FF",
+        "text": "💙 Admin Team"
+    },
+    "Moderator": {
+        "color": "#FFAA00",
+        "text": "🔨 Moderator"
+    },
+
+    "Senior Moderator": {
+        "color": "#FFC44D",
+        "text": "🛠️ Sr. Moderator"
+    },
+
+    "Senior Translator": {
+        "color": "#F92C34",
+        "text": "🌐 Sr. Translator"
+    },
+
+    "Translator": {
+        "color": "#AA0000",
+        "text": "🌍 Translator"
+    },
+
+    "Senior Designer": {
+        "color": "#00FFFF",
+        "text": "🖌️ Sr. Designer"
+    },
+
+    "Designer": {
+        "color": "#00AAAA",
+        "text": "🎨 Designer"
+    },
+
+    "Developer": {
+        "color": "#6BBA64",
+        "text": "💻 Developer"
+    },
+
+    "Quality Assurance": {
+        "color": "#9B59B6",
+        "text": "🧪 Quality Assurance"
+    },
+
+    "Customer Support": {
+        "color": "#7CC3E0",
+        "text": "💌 Customer Support"
+    },
+
+    "Helper": {
+        "color": "#FA53FA",
+        "text": "🙌 Helper"
+    },
+
+    "Content Creator": {
+        "color": "#FF0071",
+        "text": "🎥 Content Creator",
+        "staff": false
+    },
+
+    "Member": {
+        "color": "#AA0000",
+        "text": "🌍 Translator",
+        "staff": false
+    }
+}
