@@ -212,6 +212,7 @@ body {
 
 .bottom {
     height: 100%;
+    font-size: 80%;
     background: #313742;
 }
 
@@ -229,7 +230,7 @@ body {
     flex-direction: column;
     height: 100%;
     color: white;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .bottom .content-mid .stat-value input {
