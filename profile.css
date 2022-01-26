@@ -4,7 +4,28 @@ body {
     overflow: hidden;
     display: grid;
     place-content: center;
-    background-color: #292e39 !important;
+    background-color: #2d3235 !important;
+    position: relative;
+}
+
+.background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.background .square{
+    position: absolute;
+    background-color: #CC5500;
+    height: 800px;
+    width: 800px;
+    bottom: -25rem;
+    transform: rotate(45deg);
+}
+
+.square.two{
+
 }
 
 .upload {
@@ -18,22 +39,22 @@ body {
     height: fit-content;
 }
 
-.upload .input-table{
+.upload .input-table {
     display: flex;
     margin: 3rem;
 }
 
-.upload .input-table tbody{
+.upload .input-table tbody {
     display: flex;
 }
 
-.upload .input-table tr{
+.upload .input-table tr {
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
-.upload .upload-header{
+.upload .upload-header {
     text-align: center;
     margin: 1rem;
 }
