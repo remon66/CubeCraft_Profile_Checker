@@ -219,8 +219,6 @@ body {
 .bottom .content-mid {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 10px 10px 5px 10px;
 }
 
 .bottom .content-mid .stat-value {
