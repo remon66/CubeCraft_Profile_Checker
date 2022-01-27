@@ -4,19 +4,19 @@ body {
     overflow: hidden;
     display: grid;
     place-content: center;
-    background: rgb(0,0,0);
-    background: linear-gradient(-45deg, rgba(49,55,66,1) 50%, rgba(58,169,255,1) 50%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(-45deg, rgba(49, 55, 66, 1) 50%, rgba(58, 169, 255, 1) 50%);
     position: relative;
 }
 
-.background{
+.background {
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: -1;
 }
 
-.upload-div{
+.upload-div {
     position: absolute;
     top: 10rem;
     left: 10rem;
@@ -70,7 +70,7 @@ body {
     line-height: 2;
 }
 
-.profile-wrapper{
+.profile-wrapper {
     position: absolute;
     bottom: 10rem;
     right: 20rem;
@@ -151,29 +151,25 @@ body {
 }
 
 .top .content .roles .role-1 {
-    height: 55%;
-    width: 42%;
-    display: grid;
-    place-content: center;
     background-color: #1e89eb;
     border: #4da2ef;
+}
+
+.top .content .roles .role {
+    height: 55%;
+    width: fit-content;
+    display: grid;
+    place-content: center;
     border-radius: 14px;
     color: white;
     margin-left: 5px;
     z-index: 5;
+    padding: 0 10px;
 }
 
 .top .content .roles .role-2 {
-    height: 55%;
-    width: 42%;
-    display: grid;
-    place-content: center;
     background-color: #9b59b6;
     border: #b07cc6;
-    border-radius: 14px;
-    color: white;
-    margin-left: 5px;
-    z-index: 5;
 }
 
 .top .content .description {
@@ -211,7 +207,7 @@ body {
     object-fit: cover;
 }
 
-.top .banner img[src=""]{
+.top .banner img[src=""] {
     display: none;
 }
 
