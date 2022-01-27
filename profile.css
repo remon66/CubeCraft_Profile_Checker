@@ -211,6 +211,10 @@ body {
     object-fit: cover;
 }
 
+.top .banner img[src=""]{
+    display: none;
+}
+
 .bottom {
     height: 100%;
     font-size: 80%;
