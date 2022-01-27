@@ -14,21 +14,10 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 </head>
 <body onload="checkBanner()">
-<div class="background">
-    <div class="square one">
-
-    </div>
-    <div class="square two">
-
-    </div>
-    <div class="square three">
-
-    </div>
-</div>
 <div class="container-fluid" style="width: 100vw">
     <div class="row">
         <div class="col-7">
-            <div class="d-flex justify-content-center align-items-center" style="height: 100%">
+            <div class="upload-div">
                 <div class="upload">
                     <table class="input-table">
                         <tbody>
@@ -66,112 +55,114 @@
             </div>
         </div>
         <div class="col-5">
-            <div class="profile">
-                <div class="container-fluid g-0">
-                    <div class="row g-0">
-                        <div class="top">
-                            <div class="col-12">
-                                <div class="profile-pic">
-                                    <img class="profile-picture"
-                                         src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png">
-                                </div>
-                                <div class="content">
-                                    <div class="name">
-                                        <input type="text" class="name-input">
+            <div class="profile-wrapper">
+                <div class="profile">
+                    <div class="container-fluid g-0">
+                        <div class="row g-0">
+                            <div class="top">
+                                <div class="col-12">
+                                    <div class="profile-pic">
+                                        <img class="profile-picture"
+                                             src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png">
                                     </div>
-                                    <div class="roles" style="display: none">
-                                        <div class="role-1">
-                                            Team CubeCraft
+                                    <div class="content">
+                                        <div class="name">
+                                            <input type="text" class="name-input">
                                         </div>
-                                        <div class="role-2">
-                                            🧪 Quality Assurance
+                                        <div class="roles" style="display: none">
+                                            <div class="role-1">
+                                                Team CubeCraft
+                                            </div>
+                                            <div class="role-2">
+                                                🧪 Quality Assurance
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="description">
-                                        <div class="content-des">
-                                            <span class="des-content"></span>
+                                        <div class="description">
+                                            <div class="content-des">
+                                                <span class="des-content"></span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="banner">
-                                        <img class="banner-image" src="">
+                                        <div class="banner">
+                                            <img class="banner-image" src="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row g-0">
-                        <div class="bottom">
-                            <div class="col-12">
-                                <div class="row g-0">
-                                    <div class="col-12">
-                                        <div class="content-mid">
-                                            <div class="row g-0 d-flex justify-content-center pt-2">
-                                                <div class="row">
-                                                    <div class="col-6 g-0">
-                                                        <div class="title-stat">
-                                                            <span>Messages</span>
+                        <div class="row g-0">
+                            <div class="bottom">
+                                <div class="col-12">
+                                    <div class="row g-0">
+                                        <div class="col-12">
+                                            <div class="content-mid">
+                                                <div class="row g-0 d-flex justify-content-center pt-2">
+                                                    <div class="row">
+                                                        <div class="col-6 g-0">
+                                                            <div class="title-stat">
+                                                                <span>Messages</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 g-0">
+                                                            <div class="stat-value">
+                                                                <span class="messages"></span>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-6 g-0">
-                                                        <div class="stat-value">
-                                                            <span class="messages"></span>
+                                                    <div class="row">
+                                                        <div class="col-6 g-0">
+                                                            <div class="title-stat">
+                                                                <span>Featured content</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 g-0">
+                                                            <div class="stat-value">
+                                                                <span class="featured-content"></span>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-6 g-0">
-                                                        <div class="title-stat">
-                                                            <span>Featured content</span>
+                                                    <div class="row">
+                                                        <div class="col-6 g-0">
+                                                            <div class="title-stat">
+                                                                <span>Reaction score</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 g-0">
+                                                            <div class="stat-value">
+                                                                <span class="reaction-score"></span>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-6 g-0">
-                                                        <div class="stat-value">
-                                                            <span class="featured-content"></span>
+                                                    <div class="row">
+                                                        <div class="col-6 g-0">
+                                                            <div class="title-stat">
+                                                                <span>Points</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 g-0">
+                                                            <div class="stat-value">
+                                                                <span class="points"></span>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-6 g-0">
-                                                        <div class="title-stat">
-                                                            <span>Reaction score</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6 g-0">
-                                                        <div class="stat-value">
-                                                            <span class="reaction-score"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-6 g-0">
-                                                        <div class="title-stat">
-                                                            <span>Points</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6 g-0">
-                                                        <div class="stat-value">
-                                                            <span class="points"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div style="width: 100%" class="d-flex justify-content-center">
-                                            <div style="width: 90%">
-                                                <div class="line"></div>
-                                            </div>
-                                        </div>
-                                        <div class="content-bottom">
-                                            <div class="row g-0">
-                                                <div class="col-12 g-0">
-                                                    <span class="title">Joined:</span>
-                                                    <span class="value joined-at"></span>
                                                 </div>
                                             </div>
-                                            <div class="row g-0">
-                                                <div class="col-12 g-0">
-                                                    <span class="title">Last seen:</span>
-                                                    <span class="value last-seen"></span>
+                                            <div style="width: 100%" class="d-flex justify-content-center">
+                                                <div style="width: 90%">
+                                                    <div class="line"></div>
+                                                </div>
+                                            </div>
+                                            <div class="content-bottom">
+                                                <div class="row g-0">
+                                                    <div class="col-12 g-0">
+                                                        <span class="title">Joined:</span>
+                                                        <span class="value joined-at"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="row g-0">
+                                                    <div class="col-12 g-0">
+                                                        <span class="title">Last seen:</span>
+                                                        <span class="value last-seen"></span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -185,7 +176,6 @@
         </div>
     </div>
 </div>
-
 
 </body>
 <script src="js/read_input.js"></script>

@@ -4,7 +4,8 @@ body {
     overflow: hidden;
     display: grid;
     place-content: center;
-    background-color: #2d3235 !important;
+    background: rgb(0,0,0);
+    background: linear-gradient(-45deg, rgba(49,55,66,1) 50%, rgba(58,169,255,1) 50%);
     position: relative;
 }
 
@@ -15,17 +16,11 @@ body {
     z-index: -1;
 }
 
-.background .square{
+.upload-div{
     position: absolute;
-    background-color: #CC5500;
-    height: 800px;
-    width: 800px;
-    bottom: -25rem;
-    transform: rotate(45deg);
-}
-
-.square.two{
-    right: 50%;
+    top: 10rem;
+    left: 10rem;
+    height: 100%;
 }
 
 .upload {
@@ -73,6 +68,12 @@ body {
 
 .upload .text span {
     line-height: 2;
+}
+
+.profile-wrapper{
+    position: absolute;
+    bottom: 10rem;
+    right: 20rem;
 }
 
 .profile {
