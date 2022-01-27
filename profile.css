@@ -25,7 +25,7 @@ body {
 }
 
 .square.two{
-
+    right: 50%;
 }
 
 .upload {
@@ -273,6 +273,7 @@ body {
 
 .title {
     color: #a7b0c3;
+    font-weight: 100;
 }
 
 .value {
