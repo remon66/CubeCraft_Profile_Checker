@@ -16,13 +16,6 @@ body {
     z-index: -1;
 }
 
-.upload-div {
-    position: absolute;
-    top: 10rem;
-    left: 10rem;
-    height: 100%;
-}
-
 .upload {
     color: white;
     margin-bottom: 25px;
@@ -70,10 +63,9 @@ body {
     line-height: 2;
 }
 
-.profile-wrapper {
-    position: absolute;
-    bottom: 10rem;
-    right: 20rem;
+.profile-wrapper{
+    display: flex;
+    justify-content: center;
 }
 
 .profile {
