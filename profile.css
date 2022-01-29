@@ -9,11 +9,22 @@ body {
     position: relative;
 }
 
+.containerr{
+    height: 100vh;
+    width: 100vw!important;
+}
+
 .background {
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: -1;
+}
+
+.upload-div {
+    height: 100%;
+    display: flex;
+    margin-top: 10%;
 }
 
 .upload {
@@ -65,26 +76,25 @@ body {
 
 .profile-wrapper{
     display: flex;
+    align-items: end;
     justify-content: center;
+    height: 100%;
 }
 
 .profile {
     width: 300px;
-    box-shadow: 0px 8px 20px black;
+    box-shadow: 0 8px 20px black;
     border-radius: 14px;
     position: relative;
     overflow: hidden;
+    height: fit-content;
+    margin-bottom: 10%;
 }
 
 .line {
     margin: 15px 0;
     border: none;
     border-top: 1px solid #565d6b;
-}
-
-.container-fluid {
-    height: 100%;
-    width: 100%;
 }
 
 .row {
